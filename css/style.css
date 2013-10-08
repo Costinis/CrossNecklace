@@ -3,9 +3,15 @@
 	margin:0;
 	padding:0;	
 }
-.ui-page { 
+/*.ui-page { 
 background:#000;
+}*/
+#page {
+	background-repeat: repeat;
+	background-size: cover;
+	background-image: url(../images/bg.gif);
 }
+
 
 .nav {
 	text-align:center;
