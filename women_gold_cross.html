@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Women Cross Necklace</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="JqMobile/jquery.mobile.css">
+<link rel="stylesheet" type="text/css" href="imageGallery/photoswipe.css">
+<script src="imageGallery/lib/klass.min.js"></script>
+<script src="JqMobile/jquery.js"></script>
+<script src="JqMobile/jquery.mobile.js"></script>
+<script src="imageGallery/code.photoswipe-3.0.5.min.js"></script>
+</head>
+
+<body>
+<div data-role="page" id="page">
+<div class="title">
+  <img src="images/title_women.png" width="90%"  alt="title page"> </div>
+  <div data-role="content" data-theme="a">
+   <div class="allGallery">
+      <ul class="gallery">
+          <li><a href="imageGallery/gallery/img01.jpg" ><img src="imageGallery/gallery/img01.jpg" alt="Women Silver Cross"></a></li>
+          <li><a href="imageGallery/gallery/img02.jpg" ><img src="imageGallery/gallery/img02.jpg" alt="Women Silver Cross"></a></li>
+          <li><a href="imageGallery/gallery/img03.jpg" ><img src="imageGallery/gallery/img03.jpg" alt="Women Silver Cross"></a></li>
+          <li><a href="imageGallery/gallery/img04.jpg" ><img src="imageGallery/gallery/img04.jpg" alt="Women Silver Cross"></a></li>
+          </ul>
+       <ul class="gallery">   
+          <li><a href="imageGallery/gallery/img05.jpg" ><img src="imageGallery/gallery/img05.jpg" alt="Women Silver Cross"></a></li>
+          <li><a href="imageGallery/gallery/img06.jpg" ><img src="imageGallery/gallery/img06.jpg" alt="Women Silver Cross"></a></li>
+          <li><a href="imageGallery/gallery/img07.jpg" ><img src="imageGallery/gallery/img07.jpg" alt="Women Silver Cross"></a></li>
+          <li><a href="imageGallery/gallery/img08.jpg" ><img src="imageGallery/gallery/img08.jpg" alt="Women Silver Cross"></a></li>
+      </ul>
+     
+      </div>
+ <script>
+   $(document).ready(function(){ 
+     var myPhotoSwipe = $(".gallery a").photoSwipe({ 
+     enableMouseWheel: false ,
+     enableKeyboard: false ,
+     captionAndToolbarAutoHideDelay: 0
+    }); 
+  });
+</script>
+  </div>
+  <div class="backBtn" data-position="fixed">
+    <a href="" data-rel="back"><p><< Back</p></a>
+  </div>
+</div>
+</body>
+</html>
