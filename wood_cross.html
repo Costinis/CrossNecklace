@@ -14,11 +14,29 @@
 </head>
 
 <body>
-<div data-role="page" id="page">
+<div data-role="page" id="page" class="gallery-page">
 <div class="title">
-  <img src="images/title_wood.png" width="90%"  alt="title page"> </div>
+  <img src="images/title_wood.png" width="90%"  alt="title page">
+   </div>
   <div data-role="content" data-theme="a">
- <div class="allGallery">
+ <script>
+$("#page").live("pageshow", function() {
+            var myPhotoSwipe = $(".gallery a").photoSwipe({ 
+                enableMouseWheel: false,
+            })
+        }).live("pagehide", function() {
+            if ($('.ps-carousel').length) {
+                $('body').removeClass('ps-active');
+                $('div.gallery-page').each(function(){
+                    var photoSwipe = window.Code.PhotoSwipe;
+                    var photoSwipeInstance = photoSwipe.getInstance($(this).attr('id'));
+                    if (typeof photoSwipeInstance != "undefined" && photoSwipeInstance != null) {
+                        photoSwipe.unsetActivateInstance(photoSwipeInstance);
+                    }
+                });
+            }
+        });
+</script>
       <ul class="gallery">
           <li><a href="imageGallery/gallery/img01.jpg" ><img src="imageGallery/gallery/img01.jpg" alt="Wood Cross"></a></li>
           <li><a href="imageGallery/gallery/img02.jpg" ><img src="imageGallery/gallery/img02.jpg" alt="Wood Cross"></a></li>
@@ -44,16 +62,8 @@
           <li><a href="imageGallery/gallery/img08.jpg" ><img src="imageGallery/gallery/img08.jpg" alt="Wood Cross"></a></li>
       </ul>
       </div>
- <script>
-   $(document).ready(function(){ 
-     var myPhotoSwipe = $(".gallery a").photoSwipe({ 
-     enableMouseWheel: false ,
-     enableKeyboard: false ,
-     captionAndToolbarAutoHideDelay: 0
-    }); 
-  });
-</script>
-  </div>
+ 
+  
   <div class="backBtn">
     <a href="" data-rel="back"><p><< Back</p></a>
   </div>

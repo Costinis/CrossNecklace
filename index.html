@@ -21,7 +21,20 @@
     <a href="men_cross.html" data-transition="slide"><img src="images/button_men.png" alt="women cross btn"></a>
     <a href="wood_cross.html" data-transition="slide"><img src="images/button_wood.png" alt="women cross btn"></a>
   </div>
-
+ <script>
+  $(document).bind('pagebeforechange', function(e) {
+if ($('.ps-carousel').length) {
+$('body').removeClass('ps-active');
+$('.gallery a').each(function(){
+    var photoSwipe = window.Code.PhotoSwipe;
+    var photoSwipeInstance = photoSwipe.getInstance($(this).attr('id'));
+    if (typeof photoSwipeInstance != "undefined" && photoSwipeInstance != null) {
+        photoSwipe.unsetActivateInstance(photoSwipeInstance);
+    }
+});
+}
+});
+</script>
 </div>
 </body>
 </html>
