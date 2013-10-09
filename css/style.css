@@ -5,11 +5,9 @@
 }
 #page {
 	background-repeat: repeat;
-	background-size: cover;
+	
 	background-image: url(../images/bg.gif);
 }
-
-
 .nav {
 	text-align:center;
 	margin-top:100px;

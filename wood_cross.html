@@ -21,28 +21,28 @@
   <div data-role="content" data-theme="a">
 
       <ul class="gallery">
-          <li><a href="imageGallery/gallery/img01.jpg" ><img src="imageGallery/gallery/img01.jpg" alt="Wood Cross"></a></li>
-          <li><a href="imageGallery/gallery/img02.jpg" ><img src="imageGallery/gallery/img02.jpg" alt="Wood Cross"></a></li>
-          <li><a href="imageGallery/gallery/img03.jpg" ><img src="imageGallery/gallery/img03.jpg" alt="Wood Cross"></a></li>
-          <li><a href="imageGallery/gallery/img04.jpg" ><img src="imageGallery/gallery/img04.jpg" alt="Wood Cross"></a></li>
+          <li><a href="imageGallery/gallery/wood/img01.jpg" rel="external"><img src="imageGallery/gallery/wood/img01.jpg" alt="Wood Cross"></a></li>
+          <li><a href="imageGallery/gallery/wood/img02.jpg" rel="external"><img src="imageGallery/gallery/wood/img02.jpg" alt="Wood Cross"></a></li>
+          <li><a href="imageGallery/gallery/wood/img03.jpg" rel="external"><img src="imageGallery/gallery/wood/img03.jpg" alt="Wood Cross"></a></li>
+          <li><a href="imageGallery/gallery/wood/img04.jpg" rel="external"><img src="imageGallery/gallery/wood/img04.jpg" alt="Wood Cross"></a></li>
           </ul>
        <ul class="gallery">   
-          <li><a href="imageGallery/gallery/img05.jpg" ><img src="imageGallery/gallery/img05.jpg" alt="Wood Cross"></a></li>
-          <li><a href="imageGallery/gallery/img06.jpg" ><img src="imageGallery/gallery/img06.jpg" alt="Wood Cross"></a></li>
-          <li><a href="imageGallery/gallery/img07.jpg" ><img src="imageGallery/gallery/img07.jpg" alt="Wood Cross"></a></li>
-          <li><a href="imageGallery/gallery/img08.jpg" ><img src="imageGallery/gallery/img08.jpg" alt="Wood Cross"></a></li>
+          <li><a href="imageGallery/gallery/wood/img05.jpg" rel="external"><img src="imageGallery/gallery/wood/img05.jpg" alt="Wood Cross"></a></li>
+          <li><a href="imageGallery/gallery/wood/img06.jpg" rel="external"><img src="imageGallery/gallery/wood/img06.jpg" alt="Wood Cross"></a></li>
+          <li><a href="imageGallery/gallery/wood/img07.jpg" rel="external"><img src="imageGallery/gallery/wood/img07.jpg" alt="Wood Cross"></a></li>
+          <li><a href="imageGallery/gallery/wood/img08.jpg" rel="external"><img src="imageGallery/gallery/wood/img08.jpg" alt="Wood Cross"></a></li>
       </ul>
       <ul class="gallery">
-          <li><a href="imageGallery/gallery/img01.jpg" ><img src="imageGallery/gallery/img01.jpg" alt="Wood Cross"></a></li>
-          <li><a href="imageGallery/gallery/img02.jpg" ><img src="imageGallery/gallery/img02.jpg" alt="Wood Cross"></a></li>
-          <li><a href="imageGallery/gallery/img03.jpg" ><img src="imageGallery/gallery/img03.jpg" alt="Wood Cross"></a></li>
-          <li><a href="imageGallery/gallery/img04.jpg" ><img src="imageGallery/gallery/img04.jpg" alt="Wood Cross"></a></li>
+          <li><a href="imageGallery/gallery/wood/img09.jpg" rel="external"><img src="imageGallery/gallery/wood/img09.jpg" alt="Wood Cross"></a></li>
+          <li><a href="imageGallery/gallery/wood/img10.jpg" rel="external"><img src="imageGallery/gallery/wood/img10.jpg" alt="Wood Cross"></a></li>
+          <li><a href="imageGallery/gallery/wood/img11.jpg" rel="external"><img src="imageGallery/gallery/wood/img11.jpg" alt="Wood Cross"></a></li>
+          <li><a href="imageGallery/gallery/wood/img12.jpg" rel="external"><img src="imageGallery/gallery/wood/img12.jpg" alt="Wood Cross"></a></li>
           </ul>
        <ul class="gallery">   
-          <li><a href="imageGallery/gallery/img05.jpg" ><img src="imageGallery/gallery/img05.jpg" alt="Wood Cross"></a></li>
-          <li><a href="imageGallery/gallery/img06.jpg" ><img src="imageGallery/gallery/img06.jpg" alt="Wood Cross"></a></li>
-          <li><a href="imageGallery/gallery/img07.jpg" ><img src="imageGallery/gallery/img07.jpg" alt="Wood Cross"></a></li>
-          <li><a href="imageGallery/gallery/img08.jpg" ><img src="imageGallery/gallery/img08.jpg" alt="Wood Cross"></a></li>
+          <li><a href="imageGallery/gallery/wood/img13.jpg" rel="external"><img src="imageGallery/gallery/wood/img13.jpg" alt="Wood Cross"></a></li>
+          <li><a href="imageGallery/gallery/wood/img14.jpg" rel="external"><img src="imageGallery/gallery/wood/img14.jpg" alt="Wood Cross"></a></li>
+          <li><a href="imageGallery/gallery/wood/img15.jpg" rel="external"><img src="imageGallery/gallery/wood/img15.jpg" alt="Wood Cross"></a></li>
+          <li><a href="imageGallery/gallery/wood/img16.jpg" rel="external"><img src="imageGallery/gallery/wood/img16.jpg" alt="Wood Cross"></a></li>
       </ul>
       </div>
  
@@ -50,13 +50,14 @@
    $(document).ready(function(){ 
      var myPhotoSwipe = $(".gallery a").photoSwipe({ 
      enableMouseWheel: false ,
-     enableKeyboard: false ,
+     enableKeyboard: true ,
+	 backButtonHideEnabled: false,
      captionAndToolbarAutoHideDelay: 0
     }); 
   });
 </script>
   <div class="backBtn">
-    <a href="" data-rel="back"><p><< Back</p></a>
+    <a href="" data-role="button" data-rel="back" data-theme="a" data-inline="true"><p><< Back</p></a>
   </div>
 </div>
 </body>

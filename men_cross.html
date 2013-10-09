@@ -6,9 +6,11 @@
 <title>Men Cross Necklace</title>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="JqMobile/jquery.mobile.css">
+<link rel="stylesheet" type="text/css" href="imageGallery/photoswipe.css">
+<script src="imageGallery/lib/klass.min.js"></script>
 <script src="JqMobile/jquery.js"></script>
 <script src="JqMobile/jquery.mobile.js"></script>
-
+<script src="imageGallery/code.photoswipe-3.0.5.min.js"></script>
 </head>
 
 <body>
@@ -16,17 +18,18 @@
   <div class="titlePage">
   <img src="images/title_men.png" width="90%"  alt="title page"> </div>
   <div class="buttons">
-    <div class="rowBtn">
-    <img src="images/men-cross-gold.jpg" width="70%"  alt="gold">
-    <img src="images/gold.png" width="90%" alt="gold btn"></div>
-  
+   <div class="rowBtn">
+    <a href="" data-transition="slide"><img src="images/men-cross-gold.jpg" width="70%"  alt="gold"></a>
+    <a href="" data-transition="slide"><img src="images/gold.png" width="90%" alt="gold btn"></a>
+   </div> 
   <div class="rowBtn">
-    <img src="images/men-cross-silver.jpg" width="70%" alt="gold">
-    <img src="images/silver.png" width="90%" alt="gold btn"></div>
+    <a href="men_silver_cross.html" data-transition="slide"><img src="images/men-cross-silver.jpg" width="70%" alt="gold"></a>
+    <a href="men_silver_cross.html" data-transition="slide"><img src="images/silver.png" width="90%" alt="gold btn"></a>
+  </div>
   </div>
   <div class="clear"></div>
   <div class="backBtn" data-position="fixed">
-    <a href="" data-rel="back"><p><< Back</p></a>
+    <a href="" data-role="button" data-rel="back" data-theme="a" data-inline="true"><p><< Back</p></a>
   </div>
 </div>
 </body>
