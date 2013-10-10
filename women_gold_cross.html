@@ -18,7 +18,6 @@
 <div class="title">
   <img src="images/title_women.png" width="90%"  alt="title page"> </div>
   <div data-role="content" data-theme="a">
-   <div class="allGallery">
       <ul class="gallery">
           <li><a href="imageGallery/gallery/goldWomen/img01.jpg" ><img src="imageGallery/gallery/goldWomen/img01.jpg" alt="Women Gold Cross"></a></li>
           <li><a href="imageGallery/gallery/goldWomen/img02.jpg" ><img src="imageGallery/gallery/goldWomen/img02.jpg" alt="Women Gold Cross"></a></li>
@@ -73,17 +72,17 @@
           <li><a href="imageGallery/gallery/goldWomen/img35.jpg" ><img src="imageGallery/gallery/goldWomen/img35.jpg" alt="Women Gold Cross"></a></li>
           <li><a href="imageGallery/gallery/goldWomen/img36.jpg" ><img src="imageGallery/gallery/goldWomen/img36.jpg" alt="Women Gold Cross"></a></li>
       </ul>
-      </div>
- <script>
+  </div>
+    <script>
    $(document).ready(function(){ 
      var myPhotoSwipe = $(".gallery a").photoSwipe({ 
      enableMouseWheel: false ,
-     enableKeyboard: false ,
+     enableKeyboard: true ,
+	 backButtonHideEnabled: false,
      captionAndToolbarAutoHideDelay: 0
     }); 
   });
 </script>
-  </div>
   <div class="backBtn">
     <a href="" data-role="button" data-rel="back" data-theme="a" data-inline="true"><p><< Back</p></a>
   </div>
