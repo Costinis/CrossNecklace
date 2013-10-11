@@ -4,50 +4,45 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 <title>Women Cross Necklace</title>
-<link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="JqMobile/jquery.mobile.css">
-<link rel="stylesheet" type="text/css" href="imageGallery/photoswipe.css">
-<script src="imageGallery/lib/klass.min.js"></script>
 <script src="JqMobile/jquery.js"></script>
+<script src="js/cycle2.js"></script>
 <script src="JqMobile/jquery.mobile.js"></script>
-<script src="imageGallery/code.photoswipe-3.0.5.min.js"></script>
+
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
-<div data-role="page" id="page" class="gallery-page">
+<div data-role="page" id="page" class="gallery-page" data-ajax="true">
 <div class="title">
   <img src="images/title_wood.png" width="90%"  alt="title page">
    </div>
-  <div data-role="content" data-theme="a">
-      <ul class="gallery">
-          <li><a href="imageGallery/gallery/wood/img01.jpg" rel="external"><img src="imageGallery/gallery/wood/img01.jpg" alt="Wood Cross"></a></li>
-          <li><a href="imageGallery/gallery/wood/img02.jpg" rel="external"><img src="imageGallery/gallery/wood/img02.jpg" alt="Wood Cross"></a></li>
-          <li><a href="imageGallery/gallery/wood/img03.jpg" rel="external"><img src="imageGallery/gallery/wood/img03.jpg" alt="Wood Cross"></a></li>
-          <li><a href="imageGallery/gallery/wood/img04.jpg" rel="external"><img src="imageGallery/gallery/wood/img04.jpg" alt="Wood Cross"></a></li>
-          </ul>
-       <ul class="gallery">   
-          <li><a href="imageGallery/gallery/wood/img05.jpg" rel="external"><img src="imageGallery/gallery/wood/img05.jpg" alt="Wood Cross"></a></li>
-          <li><a href="imageGallery/gallery/wood/img06.jpg" rel="external"><img src="imageGallery/gallery/wood/img06.jpg" alt="Wood Cross"></a></li>
-          <li><a href="imageGallery/gallery/wood/img07.jpg" rel="external"><img src="imageGallery/gallery/wood/img07.jpg" alt="Wood Cross"></a></li>
-          <li><a href="imageGallery/gallery/wood/img08.jpg" rel="external"><img src="imageGallery/gallery/wood/img08.jpg" alt="Wood Cross"></a></li>
-      </ul>
-      <ul class="gallery">
-          <li><a href="imageGallery/gallery/wood/img09.jpg" rel="external"><img src="imageGallery/gallery/wood/img09.jpg" alt="Wood Cross"></a></li>
-          <li><a href="imageGallery/gallery/wood/img10.jpg" rel="external"><img src="imageGallery/gallery/wood/img10.jpg" alt="Wood Cross"></a></li>
-          <li><a href="imageGallery/gallery/wood/img11.jpg" rel="external"><img src="imageGallery/gallery/wood/img11.jpg" alt="Wood Cross"></a></li>
-          <li><a href="imageGallery/gallery/wood/img12.jpg" rel="external"><img src="imageGallery/gallery/wood/img12.jpg" alt="Wood Cross"></a></li>
-          </ul>
-       <ul class="gallery">   
-          <li><a href="imageGallery/gallery/wood/img13.jpg" rel="external"><img src="imageGallery/gallery/wood/img13.jpg" alt="Wood Cross"></a></li>
-          <li><a href="imageGallery/gallery/wood/img14.jpg" rel="external"><img src="imageGallery/gallery/wood/img14.jpg" alt="Wood Cross"></a></li>
-          <li><a href="imageGallery/gallery/wood/img15.jpg" rel="external"><img src="imageGallery/gallery/wood/img15.jpg" alt="Wood Cross"></a></li>
-          <li><a href="imageGallery/gallery/wood/img16.jpg" rel="external"><img src="imageGallery/gallery/wood/img16.jpg" alt="Wood Cross"></a></li>
-      </ul>
-      </div> 
- <script src="JqMobile/my-script.js"></script>
-  <div class="backBtn">
-    <a href="" data-role="button" data-rel="back" data-theme="a" data-inline="true"><p><< Back</p></a>
-  </div>
+  <div class="container">
+  <div class="cycle-slideshow"
+    data-cycle-fx="scrollHorz"
+    data-cycle-timeout="0"
+    data-cycle-prev=".prev"
+    data-cycle-next=".next"
+    data-ajax="false"
+    >
+  
+          <img src="imageGallery/gallery/wood/img01.jpg" width="100%" alt="Men Silver Cross">
+          <img src="imageGallery/gallery/wood/img02.jpg" width="100%" alt="Men Silver Cross">
+          <img src="imageGallery/gallery/wood/img03.jpg" width="100%" alt="Men Silver Cross">
+          <img src="imageGallery/gallery/wood/img04.jpg" width="100%" alt="Men Silver Cross">         
+          <img src="imageGallery/gallery/wood/img05.jpg" width="100%" alt="Men Silver Cross">
+          <img src="imageGallery/gallery/wood/img06.jpg" width="100%" alt="Men Silver Cross">
+          <img src="imageGallery/gallery/wood/img07.jpg" width="100%" alt="Men Silver Cross">
+          <img src="imageGallery/gallery/wood/img08.jpg" width="100%" alt="Men Silver Cross">
+      </div>
+
+      <div class="footer"  >
+     <a href="" class="prev" data-role="button" data-inline="true" data-mini="true" data-theme="e">Prev</a>
+     <a href="" class="next" data-role="button" data-inline="true" data-mini="true" data-theme="e">Next</a>
+ </div>
+ </div>
+ 
 </div>
 </body>
 </html>
