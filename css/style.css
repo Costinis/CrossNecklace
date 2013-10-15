@@ -1,82 +1,71 @@
-/* CSS Document */
-* {
-	margin:0;
-	padding:0;	
-}
-#page {
-	background-repeat: repeat;	
-	background-image: url(../images/bg.gif);
-}
-.nav {
-	text-align:center;
-	margin-top:100px;
-}
-.nav a {
-	display: block;
-}
-.nav img, .titlePage img, .title img {
-	max-width: 340px;
-}
-.nav img{
-	width:85%;
-	height:auto;
-}
-.titlePage {
-	margin-top: 15px;
-	text-align: center;
-	margin-bottom: 50px;
+.buttons .ui-btn {
+	width: 40%;
 }
 .buttons {
-	width: 86%;
-	margin-right: auto;
-	margin-left: auto;
-	background-color: #0F0;
+	
 }
-.title {
-	text-align: center;
-	margin-top: 2px;
-	padding-bottom: 0px;
-	border-bottom-width: 1px;
-	border-bottom-style: solid;
-	border-bottom-color: #600;
+.btnRight {
+	float:right;
+	width:30%;
 }
-.rowBtn {
-	width: 50%;
-	text-align: center;
+.btnLeft{
+	float:left;
+	width:30%;
+}
+.titlequest p{
+	font-size: 18px;
+	font-weight: bold;
+	font-family: "Comic Sans MS", cursive;
+	margin-left: 30px;
+	
+}
+.titlequest img, titleAns img {
 	float: left;
 }
-.rowBtn img {
-	margin-bottom: 10px;
-	max-width: 120px;
+.question {
+	font-family: "Comic Sans MS", cursive;
+	font-size: 18px;
+	color: #900;
+	text-shadow: 1px 1px #000;
 }
-.clear {
-	clear: both;
+.titleAns p{
+	font-size: 18px;
+	font-weight: bold;
+	font-family: "Comic Sans MS", cursive;
+	margin-left: 30px;
 }
-/* Gallery style*/
-.footer {
-	margin-top: -45px;
-	margin-right: 3px;
-	margin-left: 3px;
+.answer{
+	font-family: "Comic Sans MS", cursive;
+	font-size: 18px;
+	color: #016B56;
+	text-shadow: 1px 1px #000;
 }
-#page .next {
-	float: right;
-	border-radius: 50%;
-	z-index: 100;
+.container {
+	background-color: #FC9;
+	padding: 8px;
+	margin-right: -8px;
+	margin-left: -8px;
+	border: 1px solid #AE5700;
+	border-radius: 8px;
+	
 }
-#page .prev {
-	border-radius: 50%;
-	z-index: 100;
-}
-.bottomLine {
-	margin-top:10px;
-	background-color: #600;
-	height: 5px;
-}
-.cycle-slideshow {
+.startBtn {
+	margin-top: -4px;
+	border-radius: 24px;
+    width: 75%;
 	margin-right: auto;
 	margin-left: auto;
 }
-.cycle-slideshow img {
-	width:100%;
-	max-width: 500px;
+.allBtn {
+    border-radius: 24px;
+    width: 95%;
+	margin-right: auto;
+	margin-left: auto;	
+}
+.ovalBtn {
+	border-radius:50%;
+	width:25%;
+}
+.clear {
+	clear:both;
 }

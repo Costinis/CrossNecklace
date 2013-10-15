@@ -3,24 +3,144 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-<title>Cross Necklace</title>
+<title>Questions and answers</title>
+<link rel="stylesheet" type="text/css" href="JqMobile/funn.min.css">
 <link rel="stylesheet" type="text/css" href="JqMobile/jquery.mobile.css">
 <script src="JqMobile/jquery.js"></script>
 <script src="JqMobile/jquery.mobile.js"></script>
-<script src="js/cycle2.js"></script>
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<script>
+$('div.ui-page').live("swipeleft", function(){
+var nextpage = $(this).next('div[data-role="page"]');
+if (nextpage.length > 0) {
+$.mobile.changePage(nextpage, "slide", false, true);
+}
+});
+$('div.ui-page').live("swiperight", function(){
+var prevpage = $(this).prev('div[data-role="page"]');
+if (prevpage.length > 0) {
+$.mobile.changePage(prevpage, {transition: "slide",
+reverse: true}, true, true);
+}
+});
+</script>
 </head>
 
 <body>
-<div data-role="page" id="page" data-theme="a">
-
-  <div class="nav">
-    <a href="women_cross.html" data-transition="slide"><img src="images/button_women.png" alt="women cross btn"></a>
-    <a href="men_cross.html" data-transition="slide"><img src="images/button_men.png" alt="women cross btn"></a>
-    <a href="wood_cross.html" data-transition="slide" data-ajax="false"><img src="images/button_wood.png" alt="women cross btn"></a>
+<div data-role="page" id="home" data-theme="e">
+  <div data-role="content" id="startPage">
+  <img src="images/Funny-blonde-jokes1.png" width="100%"> 
+  <a href="#q1" data-role="button" data-theme="h" class="startBtn">Start</a>
+     <a href="#list" data-role="button" data-theme="f" class="allBtn">All Questions</a>
+  </div>  
+</div><!--end home-->
+<div data-role="page" id="list" data-theme="e">
+  <div data-role="header" data-theme="f">
+    <a href="#home" class="ovalBtn">Home</a>
+     <h1>Questions</h1>
   </div>
+  <div data-role="content">
+    <ol data-role="listview" data-inset="true" data-theme="e">
+      <li><a href="#q1">What's gray and come's in quarts?</a></li>
+      <li><a href="#q2">What do you call a man with half a brain?</a></li>
+      <li><a href="#q3">What is the thinnest book in the world?</a></li>
+      <li><a href="#q4">How many men does it take to change a roll of toilet paper? </a></li>
+      <li><a href="">What's gray and come's in quarts?</a></li>
+      <li><a href="">What's gray and come's in quarts?</a></li>
+      <li><a href="">What's gray and come's in quarts?</a></li>
+      <li><a href="">What's gray and come's in quarts?</a></li>
+      <li><a href="">What's gray and come's in quarts?</a></li>
+      <li><a href="">What's gray and come's in quarts?</a></li>
+      <li><a href="">What's gray and come's in quarts?</a></li>
+      <li><a href="">What's gray and come's in quarts?</a></li>
+      <li><a href="">What's gray and come's in quarts?</a></li>
+      <li><a href="">What's gray and come's in quarts?</a></li>
+      <li><a href="">What's gray and come's in quarts?</a></li>
+      <li><a href="">What's gray and come's in quarts?</a></li>
+      <li><a href="">What's gray and come's in quarts?</a></li>
+      <li><a href="">What's gray and come's in quarts?</a></li>
+      <li><a href="">What's gray and come's in quarts?</a></li>
+      <li><a href="">What's gray and come's in quarts?</a></li>
+      <li><a href="">What's gray and come's in quarts?</a></li>      
+    </ol> 
+  </div>
+</div><!--end list-->
+<div data-role="page" id="q1" data-theme="e">
+  <div data-role="header" data-theme="f">
+    <a href="#home" class="ovalBtn">Home</a>
+     <h1>Q & A</h1>
+     <a href="#list" class="ovalBtn">1 / 100</a>
+  </div>
+  <div data-role="content">
+  <div class="container">
+     <div class="titlequest"><img src="images/question.png"><p>Question:</p></div>
+     <p class="question">What's gray and come's in quarts?</p>
+     <div class="titlequest"><img src="images/answer.png"><p>Answer:</p></div>
+     <p class="answer">Elephants</p> 
+   </div>
+  </div>
+  <div  class="ui-bar-f" data-position="fixed">
+     <a href="" data-rel="back" data-role="button" data-mini="true" class="btnLeft ovalBtn" data-theme="h">Prev</a>
+     <a href="#q2" data-role="button" data-mini="true" class="btnRight ovalBtn" data-theme="h">Next</a>
+   </div>
+</div><!--end q1-->
+<div data-role="page" id="q2" data-theme="e">
+  <div data-role="header" data-theme="f">
+    <a href="#home" class="ovalBtn">Home</a>
+     <h1>Q & A</h1>
+     <a href="#list" class="ovalBtn">2 / 100</a>
+  </div>
+  <div data-role="content">
+  <div class="container">
+     <div class="titlequest"><img src="images/question.png"><p>Question:</p></div>
+     <p class="question">What do you call a man with half a brain? </p>
+     <div class="titlequest"><img src="images/answer.png"><p>Answer:</p></div>
+     <p class="answer">Gifted.</p> 
+   </div>
+  </div>
+  <div  class="ui-bar-f" data-position="fixed">
+     <a href="" data-rel="back" data-role="button" data-mini="true" class="btnLeft ovalBtn" data-theme="h">Prev</a>
+     <a href="#q3" data-role="button" data-mini="true" class="btnRight ovalBtn" data-theme="h">Next</a>
+   </div>
+</div><!--end q2-->
+<div data-role="page" id="q3" data-theme="e">
+  <div data-role="header" data-theme="f">
+    <a href="#home" class="ovalBtn">Home</a>
+     <h1>Q & A</h1>
+     <a href="#list" class="ovalBtn">3 / 100</a>
+  </div>
+  <div data-role="content">
+  <div class="container">
+     <div class="titlequest"><img src="images/question.png"><p>Question:</p></div>
+     <p class="question">What is the thinnest book in the world? </p>
+     <div class="titlequest"><img src="images/answer.png"><p> Answer:</p></div>
+     <p class="answer">"What Men Know About Women."</p> 
+   </div>
+  </div>
+  <div  class="ui-bar-f" data-position="fixed">
+     <a href="" data-rel="back" data-role="button" data-mini="true" class="btnLeft ovalBtn" data-theme="h">Prev</a>
+     <a href="#q4" data-role="button" data-mini="true" class="btnRight ovalBtn" data-theme="h">Next</a>
+   </div>
+</div><!--end q3-->
+<div data-role="page" id="q4" data-theme="e">
+  <div data-role="header" data-theme="f">
+    <a href="#home" class="ovalBtn">Home</a>
+     <h1>Q & A</h1>
+     <a href="#list" class="ovalBtn">4 / 100</a>
+  </div>
+  <div data-role="content">
+  <div class="container">
+     <div class="titlequest"><img src="images/question.png"><p>Question:</p></div>
+     <p class="question">How many men does it take to change a roll of toilet paper?  </p>
+     <div class="titlequest"><img src="images/answer.png"><p> Answer: </p></div>
+     <p class="answer">We don't know .... it's never happened.</p> 
+   </div>
+  </div>
+  <div  class="ui-bar-f" data-position="fixed">
+     <a href="" data-rel="back" data-role="button" data-mini="true" class="btnLeft ovalBtn" data-theme="h">Prev</a>
+     <a href="#q5" data-role="button" data-mini="true" class="btnRight ovalBtn" data-theme="h">Next</a>
+   </div>
+</div><!--end q3-->
 
-</div>
- 
 </body>
 </html>
