@@ -1,44 +1,34 @@
-.buttons .ui-btn {
-	width: 40%;
-}
-.buttons {
-	
-}
 .btnRight {
 	float:right;
 	width:30%;
+	margin-right:8px;
 }
 .btnLeft{
 	float:left;
 	width:30%;
+	margin-left:8px;
 }
-.titlequest p{
-	font-size: 18px;
+.titleans p, .titlequest p {
+	font-size: 22px;
 	font-weight: bold;
 	font-family: "Comic Sans MS", cursive;
-	margin-left: 30px;
-	
+	margin-left: 36px;
+	text-shadow: 1px 1px 1px #666;	
 }
-.titlequest img, titleAns img {
+.titlequest img, .titleans img {
 	float: left;
 }
-.question {
+.question, .answer {
 	font-family: "Comic Sans MS", cursive;
-	font-size: 18px;
-	color: #900;
-	text-shadow: 1px 1px #000;
+	font-size: 22px;
+	text-shadow: 1px 1px 1px #000;
+	text-indent: 20px;
 }
-.titleAns p{
-	font-size: 18px;
-	font-weight: bold;
-	font-family: "Comic Sans MS", cursive;
-	margin-left: 30px;
+.question {
+	color: #900;
 }
 .answer{
-	font-family: "Comic Sans MS", cursive;
-	font-size: 18px;
 	color: #016B56;
-	text-shadow: 1px 1px #000;
 }
 .container {
 	background-color: #FC9;
@@ -46,8 +36,7 @@
 	margin-right: -8px;
 	margin-left: -8px;
 	border: 1px solid #AE5700;
-	border-radius: 8px;
-	
+	border-radius: 8px;	
 }
 .startBtn {
 	margin-top: -4px;
@@ -68,4 +57,8 @@
 }
 .clear {
 	clear:both;
+}
+hr {
+	color: #C60;
+	width: 80%;
 }

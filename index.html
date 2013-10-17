@@ -9,21 +9,7 @@
 <script src="JqMobile/jquery.js"></script>
 <script src="JqMobile/jquery.mobile.js"></script>
 <link rel="stylesheet" type="text/css" href="css/style.css">
-<script>
-$('div.ui-page').live("swipeleft", function(){
-var nextpage = $(this).next('div[data-role="page"]');
-if (nextpage.length > 0) {
-$.mobile.changePage(nextpage, "slide", false, true);
-}
-});
-$('div.ui-page').live("swiperight", function(){
-var prevpage = $(this).prev('div[data-role="page"]');
-if (prevpage.length > 0) {
-$.mobile.changePage(prevpage, {transition: "slide",
-reverse: true}, true, true);
-}
-});
-</script>
+<script src="js/my-script.js"></script>
 </head>
 
 <body>
@@ -45,14 +31,14 @@ reverse: true}, true, true);
       <li><a href="#q2">What do you call a man with half a brain?</a></li>
       <li><a href="#q3">What is the thinnest book in the world?</a></li>
       <li><a href="#q4">How many men does it take to change a roll of toilet paper? </a></li>
-      <li><a href="">What's gray and come's in quarts?</a></li>
-      <li><a href="">What's gray and come's in quarts?</a></li>
-      <li><a href="">What's gray and come's in quarts?</a></li>
-      <li><a href="">What's gray and come's in quarts?</a></li>
-      <li><a href="">What's gray and come's in quarts?</a></li>
-      <li><a href="">What's gray and come's in quarts?</a></li>
-      <li><a href="">What's gray and come's in quarts?</a></li>
-      <li><a href="">What's gray and come's in quarts?</a></li>
+      <li><a href="#q5">What do you call a boomerang that won't come back?</a></li>
+      <li><a href="#q6">How is a lawyer different from a hooker?</a></li>
+      <li><a href="#q7">How many divorced men does it take to screw in a light bulb?</a></li>
+      <li><a href="#q8">What do you call a man with a car on his head?</a></li>
+      <li><a href="#q9">What's Black and Brown and looks good on a lawyer?</a></li>
+      <li><a href="#q10">What's the difference between a bad golfer and a bad skydiver?</a></li>
+      <li><a href="#q11">What do you call a lawyer skydiving?</a></li>
+      <li><a href="#q12">Which sexual position produces the ugliest children?</a></li>
       <li><a href="">What's gray and come's in quarts?</a></li>
       <li><a href="">What's gray and come's in quarts?</a></li>
       <li><a href="">What's gray and come's in quarts?</a></li>
@@ -66,81 +52,188 @@ reverse: true}, true, true);
   </div>
 </div><!--end list-->
 <div data-role="page" id="q1" data-theme="e">
-  <div data-role="header" data-theme="f">
-    <a href="#home" class="ovalBtn">Home</a>
-     <h1>Q & A</h1>
-     <a href="#list" class="ovalBtn">1 / 100</a>
-  </div>
+  <div data-role="header" data-theme="f" class="header">
+    <a href="#home" class="ovalBtn">Home</a> <h1></h1>
+     <a href="#list" class="ovalBtn">1 / <span class="nr"></span></a> </div>
   <div data-role="content">
   <div class="container">
-     <div class="titlequest"><img src="images/question.png"><p>Question:</p></div>
-     <p class="question">What's gray and come's in quarts?</p>
-     <div class="titlequest"><img src="images/answer.png"><p>Answer:</p></div>
-     <p class="answer">Elephants</p> 
-   </div>
+     <div class="titlequest"></div> <p class="question">What's gray and come's in quarts?</p><hr>
+     <div class="titleans"></div> <p class="answer">Elephants</p> </div>
   </div>
-  <div  class="ui-bar-f" data-position="fixed">
-     <a href="" data-rel="back" data-role="button" data-mini="true" class="btnLeft ovalBtn" data-theme="h">Prev</a>
-     <a href="#q2" data-role="button" data-mini="true" class="btnRight ovalBtn" data-theme="h">Next</a>
-   </div>
+  <div  class="ui-bar-f" data-position="fixed" id="fix">    
+     <a href="#q2" data-role="button" data-mini="true" class="btnRight ovalBtn" data-theme="h"></a> </div>
 </div><!--end q1-->
 <div data-role="page" id="q2" data-theme="e">
-  <div data-role="header" data-theme="f">
-    <a href="#home" class="ovalBtn">Home</a>
-     <h1>Q & A</h1>
-     <a href="#list" class="ovalBtn">2 / 100</a>
-  </div>
+  <div data-role="header" data-theme="f" class="header">
+    <a href="#home" class="ovalBtn">Home</a> <h1></h1>
+     <a href="#list" class="ovalBtn">2 / <span class="nr"></span></a> </div>
   <div data-role="content">
   <div class="container">
-     <div class="titlequest"><img src="images/question.png"><p>Question:</p></div>
-     <p class="question">What do you call a man with half a brain? </p>
-     <div class="titlequest"><img src="images/answer.png"><p>Answer:</p></div>
-     <p class="answer">Gifted.</p> 
-   </div>
+     <div class="titlequest"></div> <p class="question">What do you call a man with half a brain?</p><hr>
+     <div class="titleans"></div> <p class="answer">Gifted</p> </div>
   </div>
-  <div  class="ui-bar-f" data-position="fixed">
-     <a href="" data-rel="back" data-role="button" data-mini="true" class="btnLeft ovalBtn" data-theme="h">Prev</a>
-     <a href="#q3" data-role="button" data-mini="true" class="btnRight ovalBtn" data-theme="h">Next</a>
-   </div>
+  <div  class="ui-bar-f" data-position="fixed" id="fix">
+     <a href="#q1" data-role="button" data-mini="true" class="btnLeft ovalBtn" data-theme="h"></a>
+     <a href="#q3" data-role="button" data-mini="true" class="btnRight ovalBtn" data-theme="h"></a> </div>
 </div><!--end q2-->
 <div data-role="page" id="q3" data-theme="e">
-  <div data-role="header" data-theme="f">
-    <a href="#home" class="ovalBtn">Home</a>
-     <h1>Q & A</h1>
-     <a href="#list" class="ovalBtn">3 / 100</a>
-  </div>
+  <div data-role="header" data-theme="f" class="header">
+    <a href="#home" class="ovalBtn">Home</a> <h1></h1>
+     <a href="#list" class="ovalBtn">3 / <span class="nr"></span></a> </div>
   <div data-role="content">
   <div class="container">
-     <div class="titlequest"><img src="images/question.png"><p>Question:</p></div>
-     <p class="question">What is the thinnest book in the world? </p>
-     <div class="titlequest"><img src="images/answer.png"><p> Answer:</p></div>
-     <p class="answer">"What Men Know About Women."</p> 
-   </div>
+     <div class="titlequest"></div> <p class="question">What is the thinnest book in the world?</p><hr>
+     <div class="titleans"></div> <p class="answer">"What Men Know About Women."</p> </div>
   </div>
-  <div  class="ui-bar-f" data-position="fixed">
-     <a href="" data-rel="back" data-role="button" data-mini="true" class="btnLeft ovalBtn" data-theme="h">Prev</a>
-     <a href="#q4" data-role="button" data-mini="true" class="btnRight ovalBtn" data-theme="h">Next</a>
-   </div>
+  <div  class="ui-bar-f" data-position="fixed" id="fix">
+     <a href="#q2" data-role="button" data-mini="true" class="btnLeft ovalBtn" data-theme="h"></a>
+     <a href="#q4" data-role="button" data-mini="true" class="btnRight ovalBtn" data-theme="h"></a> </div>
 </div><!--end q3-->
 <div data-role="page" id="q4" data-theme="e">
-  <div data-role="header" data-theme="f">
-    <a href="#home" class="ovalBtn">Home</a>
-     <h1>Q & A</h1>
-     <a href="#list" class="ovalBtn">4 / 100</a>
-  </div>
+  <div data-role="header" data-theme="f" class="header">
+    <a href="#home" class="ovalBtn">Home</a> <h1></h1>
+     <a href="#list" class="ovalBtn">4 / <span class="nr"></span></a> </div>
   <div data-role="content">
   <div class="container">
-     <div class="titlequest"><img src="images/question.png"><p>Question:</p></div>
-     <p class="question">How many men does it take to change a roll of toilet paper?  </p>
-     <div class="titlequest"><img src="images/answer.png"><p> Answer: </p></div>
-     <p class="answer">We don't know .... it's never happened.</p> 
-   </div>
+     <div class="titlequest"></div> <p class="question">How many men does it take to change a roll of toilet paper?</p><hr>
+     <div class="titleans"></div> <p class="answer">We don't know .... it's never happened.</p> </div>
   </div>
-  <div  class="ui-bar-f" data-position="fixed">
-     <a href="" data-rel="back" data-role="button" data-mini="true" class="btnLeft ovalBtn" data-theme="h">Prev</a>
-     <a href="#q5" data-role="button" data-mini="true" class="btnRight ovalBtn" data-theme="h">Next</a>
-   </div>
-</div><!--end q3-->
+  <div  class="ui-bar-f" data-position="fixed" id="fix">
+     <a href="#q3" data-role="button" data-mini="true" class="btnLeft ovalBtn" data-theme="h"></a>
+     <a href="#q5" data-role="button" data-mini="true" class="btnRight ovalBtn" data-theme="h"></a> </div>
+</div><!--end q4-->
+<div data-role="page" id="q5" data-theme="e">
+  <div data-role="header" data-theme="f" class="header">
+    <a href="#home" class="ovalBtn">Home</a> <h1></h1> 
+	<a href="#list" class="ovalBtn">5 / <span class="nr"></span></a> </div>
+  <div data-role="content"> <div class="container">
+     <div class="titlequest"></div> <p class="question">What do you call a boomerang that won't come back?</p><hr>
+     <div class="titleans"></div> <p class="answer">A stick.</p> </div>
+  </div>
+  <div  class="ui-bar-f" data-position="fixed" id="fix">
+     <a href="#q4" data-role="button" data-mini="true" class="btnLeft ovalBtn" data-theme="h"></a>
+     <a href="#q6" data-role="button" data-mini="true" class="btnRight ovalBtn" data-theme="h"></a> </div>
+</div><!--end q5-->
+<div data-role="page" id="q6" data-theme="e">
+  <div data-role="header" data-theme="f" class="header">
+    <a href="#home" class="ovalBtn">Home</a> <h1></h1> 
+	<a href="#list" class="ovalBtn">6 / <span class="nr"></span></a> </div>
+  <div data-role="content"> <div class="container">
+     <div class="titlequest"></div> <p class="question">How is a lawyer different from a hooker?</p><hr>
+     <div class="titleans"></div> <p class="answer">There are some things a hooker just won't do.</p> </div>
+  </div>
+  <div  class="ui-bar-f" data-position="fixed" id="fix">
+     <a href="#q5" data-role="button" data-mini="true" class="btnLeft ovalBtn" data-theme="h"></a>
+     <a href="#q7" data-role="button" data-mini="true" class="btnRight ovalBtn" data-theme="h"></a> </div>
+</div><!--end q6-->
+<div data-role="page" id="q7" data-theme="e">
+  <div data-role="header" data-theme="f" class="header">
+    <a href="#home" class="ovalBtn">Home</a> <h1></h1> 
+	<a href="#list" class="ovalBtn">7 / <span class="nr"></span></a> </div>
+  <div data-role="content"> <div class="container">
+     <div class="titlequest"></div> <p class="question">How many divorced men does it take to screw in a light bulb?</p><hr>
+     <div class="titleans"></div> <p class="answer">None, the sockets go with the house.</p> </div>
+  </div>
+  <div  class="ui-bar-f" data-position="fixed" id="fix">
+     <a href="#q6" data-role="button" data-mini="true" class="btnLeft ovalBtn" data-theme="h"></a>
+     <a href="#q8" data-role="button" data-mini="true" class="btnRight ovalBtn" data-theme="h"></a> </div>
+</div><!--end q7-->
+<div data-role="page" id="q8" data-theme="e">
+  <div data-role="header" data-theme="f" class="header">
+    <a href="#home" class="ovalBtn">Home</a> <h1></h1> 
+	<a href="#list" class="ovalBtn">8 / <span class="nr"></span></a> </div>
+  <div data-role="content"> <div class="container">
+     <div class="titlequest"></div> <p class="question">What do you call a man with a car on his head?</p><hr>
+     <div class="titleans"></div> <p class="answer">Jack.</p> </div>
+  </div>
+  <div  class="ui-bar-f" data-position="fixed" id="fix">
+     <a href="#q7" data-role="button" data-mini="true" class="btnLeft ovalBtn" data-theme="h"></a>
+     <a href="#q9" data-role="button" data-mini="true" class="btnRight ovalBtn" data-theme="h"></a> </div>
+</div><!--end q8-->
+<div data-role="page" id="q9" data-theme="e">
+  <div data-role="header" data-theme="f" class="header">
+    <a href="#home" class="ovalBtn">Home</a> <h1></h1> 
+	<a href="#list" class="ovalBtn">9 / <span class="nr"></span></a> </div>
+  <div data-role="content"> <div class="container">
+     <div class="titlequest"></div> <p class="question">What's Black and Brown and looks good on a lawyer?</p><hr>
+     <div class="titleans"></div> <p class="answer">A Doberman.</p> </div>
+  </div>
+  <div  class="ui-bar-f" data-position="fixed" id="fix">
+     <a href="#q8" data-role="button" data-mini="true" class="btnLeft ovalBtn" data-theme="h"></a>
+     <a href="#q10" data-role="button" data-mini="true" class="btnRight ovalBtn" data-theme="h"></a> </div>
+</div><!--end q9-->
+<div data-role="page" id="q10" data-theme="e">
+  <div data-role="header" data-theme="f" class="header">
+    <a href="#home" class="ovalBtn">Home</a> <h1></h1> 
+	<a href="#list" class="ovalBtn">10 / <span class="nr"></span></a> </div>
+  <div data-role="content"> <div class="container">
+     <div class="titlequest"></div> <p class="question">What's the difference between a bad golfer and a bad skydiver?</p><hr>
+     <div class="titleans"></div> <p class="answer">A bad golfer goes, WHACK! "Damn." A bad skydiver goes, "Damn." WHACK!</p> </div>
+  </div>
+  <div  class="ui-bar-f" data-position="fixed" id="fix">
+     <a href="#q9" data-role="button" data-mini="true" class="btnLeft ovalBtn" data-theme="h"></a>
+     <a href="#q11" data-role="button" data-mini="true" class="btnRight ovalBtn" data-theme="h"></a> </div>
+</div><!--end q10-->
+<div data-role="page" id="q11" data-theme="e">
+  <div data-role="header" data-theme="f" class="header">
+    <a href="#home" class="ovalBtn">Home</a> <h1></h1> 
+	<a href="#list" class="ovalBtn">11 / <span class="nr"></span></a> </div>
+  <div data-role="content"> <div class="container">
+     <div class="titlequest"></div> <p class="question">What do you call a lawyer skydiving?</p><hr>
+     <div class="titleans"></div> <p class="answer">A skeet.</p> </div>
+  </div>
+  <div  class="ui-bar-f" data-position="fixed" id="fix">
+     <a href="#q10" data-role="button" data-mini="true" class="btnLeft ovalBtn" data-theme="h"></a>
+     <a href="#q12" data-role="button" data-mini="true" class="btnRight ovalBtn" data-theme="h"></a> </div>
+</div><!--end q11-->
+<div data-role="page" id="q12" data-theme="e">
+  <div data-role="header" data-theme="f" class="header">
+    <a href="#home" class="ovalBtn">Home</a> <h1></h1> 
+	<a href="#list" class="ovalBtn">12 / <span class="nr"></span></a> </div>
+  <div data-role="content"> <div class="container">
+     <div class="titlequest"></div> <p class="question">Which sexual position produces the ugliest children?</p><hr>
+     <div class="titleans"></div> <p class="answer">Ask your mother.</p> </div>
+  </div>
+  <div  class="ui-bar-f" data-position="fixed" id="fix">
+     <a href="#q11" data-role="button" data-mini="true" class="btnLeft ovalBtn" data-theme="h"></a>
+     <a href="#q13" data-role="button" data-mini="true" class="btnRight ovalBtn" data-theme="h"></a> </div>
+</div><!--end q12-->
+<div data-role="page" id="q13" data-theme="e">
+  <div data-role="header" data-theme="f" class="header">
+    <a href="#home" class="ovalBtn">Home</a> <h1></h1> 
+	<a href="#list" class="ovalBtn">13 / <span class="nr"></span></a> </div>
+  <div data-role="content"> <div class="container">
+     <div class="titlequest"></div> <p class="question">How do you embarrass an archeologist?</p><hr>
+     <div class="titleans"></div> <p class="answer">Give him a used tampon and ask him which period it came from.</p> </div>
+  </div>
+  <div  class="ui-bar-f" data-position="fixed" id="fix">
+     <a href="#q12" data-role="button" data-mini="true" class="btnLeft ovalBtn" data-theme="h"></a>
+     <a href="#q14" data-role="button" data-mini="true" class="btnRight ovalBtn" data-theme="h"></a> </div>
+</div><!--end q13-->
+<div data-role="page" id="q14" data-theme="e">
+  <div data-role="header" data-theme="f" class="header">
+    <a href="#home" class="ovalBtn">Home</a> <h1></h1> 
+	<a href="#list" class="ovalBtn">14 / <span class="nr"></span></a> </div>
+  <div data-role="content"> <div class="container">
+     <div class="titlequest"></div> <p class="question">What did the cannibal do after he dumped his girlfriend?</p><hr>
+     <div class="titleans"></div> <p class="answer">Wiped his ass.</p> </div>
+  </div>
+  <div  class="ui-bar-f" data-position="fixed" id="fix">
+     <a href="#q13" data-role="button" data-mini="true" class="btnLeft ovalBtn" data-theme="h"></a>
+     <a href="#q15" data-role="button" data-mini="true" class="btnRight ovalBtn" data-theme="h"></a> </div>
+</div><!--end q14-->
+<div data-role="page" id="q15" data-theme="e">
+  <div data-role="header" data-theme="f" class="header">
+    <a href="#home" class="ovalBtn">Home</a> <h1></h1> 
+	<a href="#list" class="ovalBtn">15 / <span class="nr"></span></a> </div>
+  <div data-role="content"> <div class="container">
+     <div class="titlequest"></div> <p class="question">How</p><hr>
+     <div class="titleans"></div> <p class="answer">asa</p> </div>
+  </div>
+  <div  class="ui-bar-f" data-position="fixed" id="fix">
+     <a href="#q14" data-role="button" data-mini="true" class="btnLeft ovalBtn" data-theme="h"></a>
+     <a href="#q16" data-role="button" data-mini="true" class="btnRight ovalBtn" data-theme="h"></a> </div>
+</div><!--end q15-->
 
 </body>
 </html>
