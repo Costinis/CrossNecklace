@@ -7,22 +7,23 @@
 <link rel="stylesheet" type="text/css" href="JqMobile/funn.min.css">
 <link rel="stylesheet" type="text/css" href="JqMobile/jquery.mobile.css">
 <script src="JqMobile/jquery.js"></script>
+<script>
+$(document).bind("mobileinit", function(){
+  $.mobile.activeBtnClass = "ui-btn-hover";
+});
+</script>
 <script src="JqMobile/jquery.mobile.js"></script>
 <script src="js/cycle.js" type="text/javascript"></script>
 <script src="js/mustache.js" type="text/javascript"></script>
-
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <script src="js/my-script.js"></script>
-
 </head>
 
 <body>
-
-
 <div data-role="page" data-theme="e">
     <div data-role="header" data-theme="f" class="header">
        <a href="index.html" class="ovalBtn">Home</a>
-	    <h1></h1>
+	    <h1>Q & A</h1>
        <a href="#list" class="ovalBtn"><div class="nr"></div></a> 
 	</div>
   <div data-role="content"> 
@@ -39,7 +40,6 @@
 		</div>		
 	{{/questions}}
 </script>
-
 <script id="count" type="text/template">
 	{{#numbers}}			
 	  <span>{{nmb}} / 220</span>
@@ -48,11 +48,9 @@
 
   </div>
   <div  class="ui-bar-f" data-position="fixed" id="fix"> 
-     <a href="" data-role="button" data-mini="true" class="btnLeft ovalBtn" data-theme="h"></a>  
-     <a href="" data-role="button" data-mini="true" class="btnRight ovalBtn" data-theme="h"></a> 
+     <a href="" data-role="button" data-mini="true" class="btnLeft ovalBtn" data-theme="h">Prev</a>  
+     <a href="" data-role="button" data-mini="true" class="btnRight ovalBtn" data-theme="h">Next</a> 
 	 </div>
 </div><!--end q1-->
-
-
 </body>
 </html>

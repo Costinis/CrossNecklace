@@ -4,16 +4,11 @@
 	float:right;
 	width:30%;
 	margin-right:8px;
-	padding: 10px 0;	
-	font-size: 13px;
 }
 .btnLeft{
 	float:left;
 	width:30%;
-	margin-left:8px;
-	padding: 10px 0;	
-	font-size: 13px;
-	
+	margin-left:8px;	
 }
 .titleans p, .titlequest p {
 	font-size: 22px;
@@ -75,6 +70,7 @@
 .ovalBtn {
 	border-radius:50%;
 	width:25%;
+	
 
 }
 .clear {
@@ -83,6 +79,9 @@
 hr {
 	color: #C60;
 	width: 80%;
+}
+.ui-bar-f .ui-btn{
+    line-height: 22px;
 }
 .ascuns {
     visibility: hidden;
