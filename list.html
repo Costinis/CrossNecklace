@@ -17,21 +17,17 @@
 
 <body>
 <div data-role="page" id="home" data-theme="e">
-  <div data-role="content" id="startPage">
-  <img src="images/Funny-blonde-jokes1.png" width="100%"> 
-  <a href="list.html" data-role="button" data-theme="h" class="startBtn" data-ajax="false">Start</a>
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https://play.google.com/store/apps/details?id=uk.co.artcoss.crossnecklace&hl=en" data-role="button" data-theme="f" class="allBtn">Share on Facebook</a>
+<div data-role="header" data-theme="f" class="header">
+       <a href="index.html" class="ovalBtn">Home</a>
+	    <h1></h1> 
+	</div>
+  <div data-role="content">
+  <div id="listPage"><br>
+   <a href="questions.html" data-role="button" data-theme="h" class="startQuestion" data-ajax="false">First 101 Questions</a><br><br>
+   <a href="questions.html" data-role="button" data-theme="h" class="startQuestion" data-ajax="false">Second 101 Questions</a><br><br><br>
+   <a href="questions.html" data-role="button" data-theme="h" class="startQuestion" data-ajax="false">Last 101 Questions</a><br><br><br><br>
   </div> 
-  
-  <a href="#" 
-  onclick="
-    window.open(
-      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href), 
-      'facebook-share-dialog', 
-      'width=626,height=436'); 
-    return false;">
-  Share on Facebook
-</a> 
+  </div> 
 </div><!--end home-->
 </body>
 </html>

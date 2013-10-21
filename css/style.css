@@ -1,5 +1,3 @@
-
-
 .btnRight {
 	float:right;
 	width:30%;
@@ -32,27 +30,18 @@
 .answer{
 	color: #016B56;
 }
-
 .container1 {
     margin: 0 auto;
 	width: 94%;
     
 }
-#speak {
-    
-}
-#questions {
-    
-}
-
 .container {
 	padding: 8px;
     background-color: #FC9;
     margin: 0 -8px;
 	border: 1px solid #AE5700;
 	border-radius: 8px;
-	box-shadow: 2px 2px 4px 1px #333;
-    	
+	box-shadow: 2px 2px 4px 1px #333;   	
 }
 .startBtn {
 	margin-top: -4px;
@@ -70,8 +59,6 @@
 .ovalBtn {
 	border-radius:50%;
 	width:25%;
-	
-
 }
 .clear {
 	clear:both;
@@ -87,10 +74,18 @@ hr {
     visibility: hidden;
 }
 .nr {
-    margin: 0 auto;
-	
-	
+    margin: 0 auto;	
 }
 .nr, .suma {
   text-align: center;
+}
+#listPage {
+	background-image: url(../images/questions-bg.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 800px;
+}
+.startQuestion {
+	border-radius: 50%;
+	line-height: 26px;
 }

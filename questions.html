@@ -7,11 +7,7 @@
 <link rel="stylesheet" type="text/css" href="JqMobile/funn.min.css">
 <link rel="stylesheet" type="text/css" href="JqMobile/jquery.mobile.css">
 <script src="JqMobile/jquery.js"></script>
-<script>
-$(document).bind("mobileinit", function(){
-  $.mobile.activeBtnClass = "ui-btn-hover";
-});
-</script>
+<script src="js/custom.js"></script>
 <script src="JqMobile/jquery.mobile.js"></script>
 <script src="js/cycle.js" type="text/javascript"></script>
 <script src="js/mustache.js" type="text/javascript"></script>
@@ -42,10 +38,9 @@ $(document).bind("mobileinit", function(){
 </script>
 <script id="count" type="text/template">
 	{{#numbers}}			
-	  <span>{{nmb}} / 220</span>
+	  <span>{{nmb}} / 101</span>
 	{{/numbers}}
 </script>
-
   </div>
   <div  class="ui-bar-f" data-position="fixed" id="fix"> 
      <a href="" data-role="button" data-mini="true" class="btnLeft ovalBtn" data-theme="h">Prev</a>  
